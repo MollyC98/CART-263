@@ -52,8 +52,14 @@ pY = 400;
 pX0 = 1160;
 pY0 = 400;
 
+
+
 }
-function draw() {
+
+function draw(){
+  pingPong();
+}
+function pingPong() {
 
   //calling functions 
 
@@ -145,6 +151,7 @@ function draw() {
         textSize(50);
         fill('#60f789');
         text('Player 2 Wins!' , width/2, height/2);
+        noLoop();
 
       }
 
@@ -153,6 +160,7 @@ function draw() {
         textSize(50);
         fill('#60f789');
         text('Player 1 Wins!', width/2, height/2);
+        noLoop();
       }
 
       //the collision of the ball with the sliders or the rectangles 

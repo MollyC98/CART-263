@@ -13,3 +13,12 @@
 ## References used 
 
 * https://p5js.org/, this website has been used for the complex changes in the code that are pre existing. 
+
+## Process 
+
+* I already decided on the size of my canvas and wanted it to be not too covering but also not extremely constricted.
+* Designing the elements or objects of the game alongside designing the court was comparitavely easy. 
+* The most challenging was the abrupt bouncing of the ball and collision with the sliders. 
+* Some more difficulties included, stopping it after the scoreboard declares a winner, but it could be solved 
+* I wanted to restart the game from the start but I couldn't figure the proper way, it was getting complicated for code that was working so I had to give up on it. 
+* I learned a lot of things during the process, it was exciting to work on this project except the tough part. 
