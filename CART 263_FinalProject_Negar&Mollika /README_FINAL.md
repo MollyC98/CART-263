@@ -9,22 +9,26 @@
 ![Playtest Moddboard 3](assets/images/Playtest%20moodboard%203.png)
 
 ### Proof of Concept: 
-This project explores an imaginative world for a little Dinosaur who has been exint from earth due to asteroid attacks and volcanic disruptions leading to extreme climatic variations. But now it is set to travel to other nearest planet Mars. With the use of the speech library Annyang we have given a different style to the game playing experience in a hope that the players or users would have fun to interact with it. 
+This project explores an imaginative world for a little Dinosaur who is in danger of becoming extinct due to asteroid attacks and volcanic disruptions leading to extreme climatic variations. Dino is set to travel to the nearest planet, Mars. With the use of the speech library Annyang we have created a unique, immersive and engaging experience for the players.
 
 ### Motivation 
 
-Why we decided to go with a speech library? Speech library is not very often used for a game because it has its constraints, it takes some ammount of time to load and process the command as speech is a very abstract non certain form of human expression. Everybody has a different voice, different way of pronounciation. Therefore, we took it as a challenge to stick to the concept and make it work. We tried many diffrent speech commands and different speech libraries out there. What we learned from the process is; continuous same commands makes it confusing for the library to detect therefore if we use synonymous words alternatively, the speech library can be a wonderful tool to work with. 
+Why we decided use a speech library: Speech libraries are not very often used for games because they have their constraints, from processing speech to executating commands. In general speech is a very abstract non certain form of human expression. Everybody has a different voice and different way of pronounciation, additionally different computer microphones, and connection also play huge roles. Therefore, we took it as a challenge to make it work. We tried diffrent speech commands and different speech libraries out there.
+What we learned from the process: In our case, we saw great improvement when the tool only captures what the user has said and checks if it matches with the command, rather than recognizing and collecting a continuous string of words. furthermore, since a function is called everytime an event is triggered, after repeating the same command multiple times, the function doesn't recognize it as a new event, thinking that it has already executed it, therefore a little delay between saying the word is needed for the code to realize that it needs to execute the command again. We wanted to minimize the delay, so our solution was to have two synonymous words that call to the same function, be used alternatively.
+
 
 ### Game Process: 
-* The game requires 2 players to be in the same environment, users can choose their players, if it's Player 1 
-that is our main character Dinosaur (Dino) and if it;s player 2, that is the asteroid shooter. 
+* The game requires 2 players to be in the same environment. Player 1 is the Dino and player 2 is the asteroid shooter.
 
-* The movement of the Player 1 (Dino) is contolled using speech recognition.
+*   Player 1 wins by reaching mars, and loses when its health gets 0. Handicap aspect: speech recognition.
+*   Player 2 wins by killing the dino and loses when Dino reaches mars. Handicap aspect: rotation.
 
-* The movement of the asteroid shooter is controlled using the left and right arrow keys and space key to fire asteroids. 
 
-* The controls and commands for the games are explained in the "instructions" page for the easy accesibility to the users and building upon convinient user experience practices. 
+* The movement of Dino is contolled using speech recognition.
 
+* The movement of the asteroid shooter is controlled using the left and right arrow keys and space key is used to fire asteroids. 
+
+* The controls and commands for the games are explained in the "instructions" page for easy accesibility and building upon convinient user experience practices. 
 
 ![Game Instructions](assets/images/dino%20instructions%20page.png) 
 
@@ -63,56 +67,58 @@ Angry Birds, Doodle Jump, Chrome Offline Dinosaur Game.
 * <script src="js/libraries/p5.dom.min.js"></script>
 
 ### Feedback:
-* Try to incorrporate the fun personalities (of the authors) into the character to make the users laugh 
-while they are interacting with the game.
+* Try to incorrporate the fun personalities (of the authors) into the character to create a narrative and to make the game interaction more playful.
 
-* Try to develop the gae further by creating levels and let the character Dino explore more spaces.
+* Try to develop the game further by creating multiple levels and let Dino explore more of the invironment
 
 * Add more commands in the game so that the user doesn't feel monotonous toggling through just 2 commands.
 
-* Try to add more mechanics that hides the constraints of the game and make users feel the constraints are the part of the game helping them feel more inclusive and connected to the game. 
+* Try to add more mechanics that hides the constraints of the game, or make them seem intentional.
 
-* Add more floating elements in the space so that the action area of the game doesn't feel restricted to just the bottom part of the canvas, rather it feels the whole space in the canvas is being utilised. 
+* Add more floating elements in the space, so that the whole canvas is utilised and the action area of the is not restricted to just the bottom part of the canvas.
+
+* Incorporate scores more heavily into the game for example: Dino gaining scores can result in an increase in health points. Asteroid shooter gaining scores can result in stronger laser damage level.
 
 ### Differences in relation to playtest 
 
-* During playtest we wanted the Dinosaur to travel through various planets and come back to Earth that concept was modified due to technical and time constraints and we decided on to let Dinosaur make it to a single planet (Mars) first. 
+* During playtest we wanted the Dinosaur to travel through various planets and eventually come back to Earth. That concept was modified due to technical and time constraints and we decided to center it around Dino escaping to mars.  
 
-* We were using p5.js speech library at first but changes it to Annyang speech library and it gave faster results.
+* We decided to us Annyang speech library instead of p5.js speech library.
 
-* Inclusion of a 3D environment was thought of but we only could incorporate the parralax background and rest of the game is 2D in nature as the file started getting heavier with aesthetics. 
+* Inclusion of a 3D elements was thought of, but we decided to create a the parralax background effect and keep the game is 2D in nature as the file started getting heavier with aesthetics. 
 
 ### Teamwork Experience 
-
-* We both had our qualities to work with and drawbacks to work upon but were able to help each other during the whole process. 
-* We had good communication which resolved a lot of problems 
-* It was a beautiful experience to create a game together and we both acknowledged each other's contributions in coding and aesthetics. 
+ 
+* Despite having our own strengths and weaknesses to improve upon, we were able to support each other throughout the entire process of creating the game.
+* Our success was largely due to our effective communication, which allowed us to resolve any issues that arose during development.
+* Collaborating on this game was a beautiful experience, and we both recognized and appreciated each other's contributions to the coding and aesthetics.
 
 ### Acheivements 
 
-* We tried this game with other users apart from our classmates and they had amazing responses which made us feel proud of our work 
+* We tried this game with other friends and families apart from our classmates and they had amazing responses which made us feel proud of our work.
 
-* Our way of working with code improved a lot from where we started 
+* We learned and explored new ways to implement our imagination to code. 
 
-* We were pround to make a game by ourselved that functions the way we exactly wanted it to 
+* Our approach to coding improved significantly from where we began and we both feel like we understand more deeply the process that goes through making a playful interaction piece.
 
-* Learned and explored new ways to implement our imagination to code. 
+* We were proud to have created a game entirely on our own that functions as we intended it to. 
+
 
 ### Challenges 
 
-* Working with the speech library and making the character move according to the commands so that it doesn't lag. 
+* Working with the speech library and making the character move according to the objective, whilst taking into account lags and delays.
 
-* Working the math for the asteroid shooter so that it shoot asteroids according to its rotation angle. 
+* Working the math and physics for the asteroid shooter so that it pushes asteroids according to its rotation angle. 
 
 * Working with high quality graphics, it was challenging for both of us and our computers. 
 
 ### Overview 
 
-This project has been a beautiful journey for 2 game enthusiasts, both of us had it clear from the initiation that we wanted to develop a game. Our communication throughout the process has been incredible and we filled each other's drawbacks and made utilization of each other's strengths. This is the first game we have ever created and is very special to us. We hope we were able to make our users laugh and have fun with a different quirly style of game play experience. We learned lot and will be carrying this knowledge further in our future endeavours of game making experience and would try our best to work on the feedbacks received from the experts and fellow mates. We are grateful for this beautiful journey and Thank everybody who has been a part of it. 
+This project has been a beautiful journey for two game enthusiasts who shared a clear vision from the outset: to develop a game. Throughout the process, our communication was incredible, and we complemented each other's strengths and weaknesses. This game is special to us as it's the first we've ever created, and we hope it brings joy and laughter to our users with its unique and quirky gameplay. We've learned a lot from this experience and plan to carry this knowledge forward into our future game-making endeavors. We appreciate all the feedback from experts and fellow creators and will do our best to incorporate it. We're grateful for this journey and want to thank everyone who has been a part of it.
 
 ### References 
 
-* Coding:
+* Coding
 https://www.youtube.com/playlist?list=PLBDInqUM5B26FjwMMZqGDxqQr1kX5V9Ul
 
 https://editor.p5js.org/simontiger/sketches/r16tcHq3e
